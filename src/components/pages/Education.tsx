@@ -1,6 +1,6 @@
 import { Component } from 'solid-js'
 import { Text, Anchor, List, ListIcon, ListItem } from '@hope-ui/solid'
-import { BsCheckLg } from 'solid-icons/bs'
+import { HiOutlineCheck } from 'solid-icons/hi'
 
 import Tile from '../Tile'
 
@@ -11,7 +11,7 @@ const Education: Component = () => {
 				&emsp;I went to couple of IT centres. Such as:
 				<List>
 					<ListItem>
-						<ListIcon as={BsCheckLg} />
+						<ListIcon as={HiOutlineCheck} />
 						<Anchor
 							href="https://www.mziuri.ge/"
 							external
@@ -25,7 +25,7 @@ const Education: Component = () => {
 					</ListItem>
 
 					<ListItem>
-						<ListIcon as={BsCheckLg} />
+						<ListIcon as={HiOutlineCheck} />
 						<Anchor
 							href="http://itvet.ge/en"
 							external

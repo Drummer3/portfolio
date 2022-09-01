@@ -10,19 +10,19 @@ import {
 import Welcome from './components/Welcome'
 import FullPageTiles from './components/FullPageTiles'
 
-import { BsMoonStars, BsSun } from 'solid-icons/bs'
-import { FiMail } from 'solid-icons/fi'
+import { HiOutlineMail, HiOutlineMoon, HiOutlineSun } from 'solid-icons/hi'
+
 const App: Component = () => {
 	const { colorMode, toggleColorMode } = useColorMode()
 
 	return (
 		<>
-			<Box position="fixed" right="$3" top="$3">
+			<Box position="fixed" right="$3" top="$3" zIndex={100}>
 				<IconButton
 					mx="$2"
 					onClick={() => {
 						try {
-							navigator.clipboard.writeText('drummerthree@gmail.com')
+							navigator.clipboard.writeText('munjishvili@proton.me')
 							notificationService.show({
 								status: 'success',
 								title: 'Mail copied successfully!',
@@ -31,19 +31,21 @@ const App: Component = () => {
 							notificationService.show({ status: 'warning', title: 'Error!' })
 						}
 					}}
-					variant="ghost"
-					aria-label="Theme Toggle"
-					icon={<FiMail size={24} />}
+					variant="outline"
+					bgColor="$background"
+					aria-label="Copy Mail"
+					icon={<HiOutlineMail size={24} />}
 				/>
 				<IconButton
 					onclick={toggleColorMode}
-					variant="ghost"
+					variant="outline"
+					bgColor="$background"
 					aria-label="Theme Toggle"
 					icon={
 						colorMode() === 'light' ? (
-							<BsSun size={24} />
+							<HiOutlineSun size={24} />
 						) : (
-							<BsMoonStars size={24} />
+							<HiOutlineMoon size={24} />
 						)
 					}
 				/>

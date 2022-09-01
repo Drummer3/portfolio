@@ -5,6 +5,7 @@ import Education from './pages/Education'
 import Experience from './pages/Experience'
 import Hobbies from './pages/Hobbies'
 import Knowledge from './pages/Knowledge'
+import Footer from './pages/Footer'
 
 const FullPageTiles: Component = () => {
 	return (
@@ -16,6 +17,7 @@ const FullPageTiles: Component = () => {
 					<Knowledge />,
 					<Experience />,
 					<Hobbies />,
+					<Footer />,
 				]}
 			>
 				{(page) => (

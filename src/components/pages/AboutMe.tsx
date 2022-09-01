@@ -6,7 +6,7 @@ const AboutMe: Component = () => {
 	return (
 		<Tile title="About Me">
 			<Text m="$4" size="xl">
-				&emsp;Hello, my name is Data (Davit) Munjishvili. I was born and raised
+				&emsp;Hello, my name is Data (David) Munjishvili. I was born and raised
 				in{' '}
 				<Anchor
 					href="https://www.google.com/maps/place/Tbilisi"

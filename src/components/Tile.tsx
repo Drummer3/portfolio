@@ -7,10 +7,12 @@ type TileProps = {
 let counter = 0
 const Tile = (props: TileProps) => {
 	const tileBackground = useColorModeValue('$background', '$neutral3')
+
 	return (
 		<Box
 			w="100%"
 			p="$2"
+			zIndex={99}
 			bg={tileBackground()}
 			borderRadius="$lg"
 			boxShadow="$2xl"
